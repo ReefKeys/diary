@@ -22,12 +22,10 @@ function addNote() {
     const content = document.getElementById('noteContent').value;
 
     if (currentEditIndex === -1) {
-        // Add new note
         notes.push({ title, content });
     } else {
-        // Update existing note
         notes[currentEditIndex] = { title, content };
-        currentEditIndex = -1; // Reset editing state
+        currentEditIndex = -1; 
     }
 
     document.getElementById('noteTitle').value = '';

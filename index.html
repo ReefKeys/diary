@@ -8,16 +8,23 @@
 </head>
 <body>
 
-    <h1>Buku Catatan Harian</h1>
+    <header>
+        <h1>Buku Catatan</h1>
+    </header>
     
-    <div>
-        <input type="text" id="noteTitle" placeholder="Judul Catatan" />
-        <textarea id="noteContent" placeholder="Isi Catatan"></textarea>
-        <button onclick="addNote()">Tambah Catatan</button>
-    </div>
-    
-    <h2>Daftar Catatan</h2>
-    <ul id="noteList"></ul>
+    <main>
+        <section class="note-form">
+            <h2>Tambah atau Edit Catatan</h2>
+            <input type="text" id="noteTitle" placeholder="Judul Catatan" />
+            <textarea id="noteContent" placeholder="Isi Catatan"></textarea>
+            <button onclick="addNote()">Simpan Catatan</button>
+        </section>
+
+        <section class="note-list">
+            <h2>Daftar Catatan</h2>
+            <ul id="noteList"></ul>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
